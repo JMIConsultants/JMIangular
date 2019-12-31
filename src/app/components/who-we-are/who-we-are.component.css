@@ -36,5 +36,10 @@ h1 {
 }
 h3 {
     text-align: right;
+    color: rgb(23,167,181);
     margin-right: 15px;
+}
+
+.card-body {
+    padding-top: 0;
 }

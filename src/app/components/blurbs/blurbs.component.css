@@ -32,3 +32,13 @@ h1 {
     margin-left: 15px;
     margin-right: 15px;
 }
+
+h4 {
+    text-align: right;
+    color: rgb(23,167,181);
+    margin-right: 15px;
+}
+
+.card-body {
+    padding-top: 0;
+}

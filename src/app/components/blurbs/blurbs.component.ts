@@ -1,5 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { serviceBlurbs } from '../../data/blurbs'
+import { serviceBlurbs } from '../../data/blurbs';
+import {
+  CanActivate, Router,
+  ActivatedRouteSnapshot,
+  RouterStateSnapshot,
+  CanActivateChild,
+  NavigationExtras
+} from '@angular/router';
 
 @Component({
   selector: 'app-blurbs',
@@ -10,14 +17,17 @@ export class BlurbsComponent implements OnInit {
   blurbs = serviceBlurbs;
 
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
-    console.log(this.blurbs[0]['icon'])
   }
 
-  goToService(id: number) {
-    console.log(id)
+  goToService(hash) {
+    let navigationExtras: NavigationExtras = {
+      fragment: hash
+    };
+
+    this.router.navigate(['/services'], navigationExtras)
   }
 
 }

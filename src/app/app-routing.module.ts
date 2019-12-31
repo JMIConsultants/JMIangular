@@ -8,14 +8,14 @@ import { ContactComponent } from './components/contact/contact.component';
 
 const routes: Routes = [
   { path: 'about-us', component: AboutUsComponent },
-  // { path: 'contact-us',      component: ContactUsComponent },
   { path: 'services', component: BlurbsComponent },
   { path: 'who-we-are', component: WhoWeAreComponent },
+  { path: '', redirectTo: '/who-we-are', pathMatch: 'full' },
   { path: 'contact-us', component: ContactComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { anchorScrolling: 'enabled' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

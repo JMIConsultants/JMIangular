@@ -7,34 +7,34 @@
 
     <div class="row" id="addSpaceTop">
         <div class='col-md-4'>
-            <div class="card hoverChange" (click)='goToService(blurbs[0].id)'>
+            <div class="card hoverChange" routerLink='/services' fragment='{{blurbs[0].hash}}'>
                 <div class='row justify-content-center' id="addSpaceTop">
                     <img class='iconSet' src="../../../assets/Icons/{{blurbs[0]['icon']}}" alt="{{blurbs[0]['icon']}}">
                 </div>
                 <div class="card-body">
-                    <h6 class="card-title d-flex justify-content-center">{{blurbs[0].service}}</h6>
+                    <h4 class="card-title d-flex justify-content-center">{{blurbs[0].service}}</h4>
                     <p class="card-text d-flex justify-content-center">{{blurbs[0].blurb}}</p>
                 </div>
             </div>
         </div>
         <div class='col-md-4'>
-            <div class="card hoverChange" (click)='goToService(blurbs[1].id)'>
+            <div class="card hoverChange" (click)='goToService(blurbs[1].hash)'>
                 <div class='row justify-content-center' id="addSpaceTop">
                     <img class='iconSet' src="../../../assets/Icons/{{blurbs[1]['icon']}}" alt="{{blurbs[1]['icon']}}">
                 </div>
                 <div class="card-body">
-                    <h6 class="card-title d-flex justify-content-center">{{blurbs[1].service}}</h6>
+                    <h4 class="card-title d-flex justify-content-center">{{blurbs[1].service}}</h4>
                     <p class="card-text d-flex justify-content-center">{{blurbs[1].blurb}}</p>
                 </div>
             </div>
         </div>
         <div class='col-md-4'>
-            <div class="card hoverChange" (click)='goToService(blurbs[2].id)'>
+            <div class="card hoverChange" (click)='goToService(blurbs[2].hash)'>
                 <div class='row justify-content-center' id="addSpaceTop">
                     <img class='iconSet' src="../../../assets/Icons/{{blurbs[2]['icon']}}" alt="{{blurbs[2]['icon']}}">
                 </div>
                 <div class="card-body">
-                    <h6 class="card-title d-flex justify-content-center">{{blurbs[2].service}}</h6>
+                    <h4 class="card-title d-flex justify-content-center">{{blurbs[2].service}}</h4>
                     <p class="card-text d-flex justify-content-center">{{blurbs[2].blurb}}</p>
                 </div>
             </div>
@@ -42,34 +42,34 @@
     </div>
     <div class="row" id="addSpaceTop">
         <div class='col-md-4'>
-            <div class="card hoverChange" (click)='goToService(blurbs[3].id)'>
+            <div class="card hoverChange" (click)='goToService(blurbs[3].hash)'>
                 <div class='row justify-content-center' id="addSpaceTop">
                     <img class='iconSet' src="../../../assets/Icons/{{blurbs[3]['icon']}}" alt="{{blurbs[3]['icon']}}">
                 </div>
                 <div class="card-body">
-                    <h6 class="card-title d-flex justify-content-center">{{blurbs[3].service}}</h6>
+                    <h4 class="card-title d-flex justify-content-center">{{blurbs[3].service}}</h4>
                     <p class="card-text d-flex justify-content-center">{{blurbs[3].blurb}}</p>
                 </div>
             </div>
         </div>
         <div class='col-md-4'>
-            <div class="card hoverChange" (click)='goToService(blurbs[4].id)'>
+            <div class="card hoverChange" (click)='goToService(blurbs[4].hash)'>
                 <div class='row justify-content-center' id="addSpaceTop">
                     <img class='iconSet' src="../../../assets/Icons/{{blurbs[4]['icon']}}" alt="{{blurbs[4]['icon']}}">
                 </div>
                 <div class="card-body">
-                    <h6 class="card-title d-flex justify-content-center">{{blurbs[4].service}}</h6>
+                    <h4 class="card-title d-flex justify-content-center">{{blurbs[4].service}}</h4>
                     <p class="card-text d-flex justify-content-center">{{blurbs[4].blurb}}</p>
                 </div>
             </div>
         </div>
         <div class='col-md-4'>
-            <div class="card hoverChange" (click)='goToService(blurbs[5].id)'>
+            <div class="card hoverChange" (click)='goToService(blurbs[5].hash)'>
                 <div class='row justify-content-center' id="addSpaceTop">
                     <img class='iconSet' src="../../../assets/Icons/{{blurbs[5]['icon']}}" alt="{{blurbs[5]['icon']}}">
                 </div>
                 <div class="card-body">
-                    <h6 class="card-title d-flex justify-content-center">{{blurbs[5].service}}</h6>
+                    <h4 class="card-title d-flex justify-content-center">{{blurbs[5].service}}</h4>
                     <p class="card-text d-flex justify-content-center">{{blurbs[5].blurb}}</p>
                 </div>
             </div>
@@ -77,15 +77,19 @@
     </div>
     <div class="row" id="addSpaceTop" style="margin-bottom:15px">
         <div class='col-md-12'>
-            <div class="card hoverChange" (click)='goToService(blurbs[6].id)'>
+            <div class="card hoverChange" (click)='goToService(blurbs[6].hash)'>
                 <div class='row justify-content-center' id="addSpaceTop">
                     <img class='iconSet' src="../../../assets/Icons/{{blurbs[6]['icon']}}" alt="{{blurbs[6]['icon']}}">
                 </div>
                 <div class="card-body">
-                    <h6 class="card-title d-flex justify-content-center">{{blurbs[6].service}}</h6>
+                    <h4 class="card-title d-flex justify-content-center">{{blurbs[6].service}}</h4>
                     <p class="card-text d-flex justify-content-center">{{blurbs[6].blurb}}</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<div class="row" id="addSpaceTop" style="background-color:#E4DDDD;">
+    <hr>
+</div>
+<app-services></app-services>
