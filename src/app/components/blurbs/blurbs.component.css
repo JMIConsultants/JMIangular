@@ -1,0 +1,34 @@
+.hoverChange:hover {
+    background-color: #E4DDDD;
+}
+
+#addSpaceTop {
+    margin-top: 15px;
+}
+
+.iconSet {
+    width: 96px;
+}
+
+h1 {
+    font-size: 100px;
+    text-align: right;
+    margin-right: 15px;
+}
+
+.bannerText {
+    background: url("../../../assets/banners/services.jpg") no-repeat;
+    height: 500px;
+    padding-left: 300px;
+    box-sizing: border-box;
+    box-shadow: inset -500px 0 300px 10px rgb(130, 130, 130);
+    color: white;
+    text-shadow: 0.5px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    padding-top: 30px;
+    padding-right: 30px;
+}
+
+.leftRight {
+    margin-left: 15px;
+    margin-right: 15px;
+}
